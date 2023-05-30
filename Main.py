@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 # Definiera en function som clearar terminalen och eventuellt skriver ut min meny
 def cls(bool = False, bool2 = False):
-    os.system('cls' if os.name == 'nt' else 'clear')
+    #clearar bash terminalen
+    os.system('clear')
     if bool:
         print("Smash Info".center(50))
         breakline()
@@ -14,7 +15,6 @@ def cls(bool = False, bool2 = False):
             print(move["Name"])
         breakline()
         if bool2:
-
             print("v - View a specific move")
             print("d - Diagrams")
             print("e - Exit the program")
